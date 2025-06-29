@@ -4,7 +4,6 @@ import path from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: '/AI-Intel-Assistant-Design/', // ✅ 加這行
   plugins: [react()],
   resolve: {
     alias: {
