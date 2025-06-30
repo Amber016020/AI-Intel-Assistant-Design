@@ -18,7 +18,7 @@ const Footer = () => {
             </div>
             <p className="mt-4 text-slate-400 text-sm">
               A next-generation intelligence system powered by a collaborative multi-agent framework.
-              Transform your research workflow with AI-powered insights.
+              Transform my research workflow with AI-powered insights.
             </p>
             <div className="flex space-x-4 mt-6">
               <a 
@@ -78,8 +78,8 @@ const Footer = () => {
             <p className="text-slate-400 text-sm mb-2">
               Interested in learning more?
             </p>
-            <a href="mailto:info@ai-intel-assistant.com" className="text-purple-400 hover:text-purple-300 text-sm">
-              info@ai-intel-assistant.com
+            <a href="mailto:a0981369120@gmail.com" className="text-purple-400 hover:text-purple-300 text-sm">
+              a0981369120@gmail.com
             </a>
             <p className="mt-4 text-slate-500 text-xs">
               © {new Date().getFullYear()} AI Intel Assistant. All rights reserved.

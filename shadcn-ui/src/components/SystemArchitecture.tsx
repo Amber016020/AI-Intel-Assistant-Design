@@ -2,7 +2,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { motion } from 'framer-motion';
 
 const SystemArchitecture = () => {
   const [activeNode, setActiveNode] = useState<string | null>(null);
@@ -35,13 +34,38 @@ const SystemArchitecture = () => {
   };
 
   const nodes = [
-    { id: 'user', label: 'User Input', description: 'Initiates the workflow with a research query' },
-    { id: 'orchestrator', label: 'Orchestrator Agent', description: 'Analyzes the request and creates a task workflow' },
-    { id: 'collectors', label: 'Collector Agents', description: 'Gather information from different sources' },
-    { id: 'analyst', label: 'Analyst Agent', description: 'Synthesizes collected information' },
-    { id: 'personalizer', label: 'Personalizer Agent', description: 'Customizes output based on user preferences' },
-    { id: 'output', label: 'Final Output', description: 'Delivers actionable insights to the user' },
+    {
+      id: 'user',
+      label: 'User Input',
+      description: 'The entry point of the system where the user submits a query or task request, triggering the AI workflow pipeline.'
+    },
+    {
+      id: 'orchestrator',
+      label: 'Orchestrator Agent',
+      description: 'Acts as the central coordinator that interprets the user’s intent, decomposes the task into subtasks, and assigns them to specialized agents.'
+    },
+    {
+      id: 'collectors',
+      label: 'Collector Agents',
+      description: 'A group of agents responsible for retrieving relevant data, documents, and online resources from various external sources, APIs, and databases.'
+    },
+    {
+      id: 'analyst',
+      label: 'Analyst Agent',
+      description: 'Processes and synthesizes the collected information, identifies key patterns or insights, and prepares it for personalization and reporting.'
+    },
+    {
+      id: 'personalizer',
+      label: 'Personalizer Agent',
+      description: 'Tailors the synthesized content based on the user’s profile, context, and preferences to ensure relevance and usability of the final output.'
+    },
+    {
+      id: 'output',
+      label: 'Final Output',
+      description: 'Presents the AI-curated insights to the user in a structured, concise, and actionable format, completing the intelligence cycle.'
+    },
   ];
+
 
   return (
     <section id="architecture" className="py-24 bg-gradient-to-b from-black to-purple-950/20">
@@ -190,17 +214,11 @@ const SystemArchitecture = () => {
                 <p className="text-slate-300 text-sm md:text-base">
                   {activeNode 
                     ? nodes.find(n => n.id === activeNode)?.description || 'Hover over a component to see details'
-                    : 'This architecture enables specialized AI agents to collaborate on complex intelligence tasks. Hover over each component to learn more.'}
+                    : 'This system architecture illustrates how specialized AI agents, each with a distinct responsibility, work together to analyze tasks, retrieve information, and deliver personalized insights. Hover over each component to understand its function in the collaborative workflow.'}
                 </p>
               </div>
             </Card>
           </div>
-        </div>
-
-        <div className="mt-16 max-w-4xl mx-auto text-center">
-          <p className="text-slate-300 italic">
-            "Multi-Agent systems represent the next evolution in AI, transitioning from single-purpose tools to collaborative teams that leverage collective intelligence."
-          </p>
         </div>
       </div>
     </section>

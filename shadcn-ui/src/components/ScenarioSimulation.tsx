@@ -32,7 +32,7 @@ const steps: Step[] = [
     color: 'bg-purple-600'
   },
   {
-    time: '09:05 AM',
+    time: '09:02 AM',
     agent: 'News Agent',
     title: 'Industry News Collection',
     description: 'Monitors Gamasutra, 80.lv and other game development resources, finding 3 articles on AI-driven NPCs.',
@@ -40,7 +40,7 @@ const steps: Step[] = [
     color: 'bg-green-500'
   },
   {
-    time: '09:10 AM',
+    time: '09:03 AM',
     agent: 'Academic Agent',
     title: 'Research Analysis',
     description: 'Discovers 2 papers on "LLM-based Dynamic Task Generation" and "RL-driven NPC Behavior" from ArXiv and GDC Vault.',
@@ -48,7 +48,7 @@ const steps: Step[] = [
     color: 'bg-green-500'
   },
   {
-    time: '09:15 AM',
+    time: '09:04 AM',
     agent: 'GitHub Agent',
     title: 'Code Repository Search',
     description: 'Finds high-star repositories: a Unity AI behavior tree tool and an LLM dialogue generation framework.',
@@ -56,7 +56,7 @@ const steps: Step[] = [
     color: 'bg-green-500'
   },
   {
-    time: '09:30 AM',
+    time: '09:05 AM',
     agent: 'Analyst',
     title: 'Information Synthesis',
     description: 'Integrates all sources, identifies key connection between "Generative AI NPCs" and "LLM Task Generation."',
@@ -64,7 +64,7 @@ const steps: Step[] = [
     color: 'bg-amber-500'
   },
   {
-    time: '09:45 AM',
+    time: '09:06 AM',
     agent: 'Personalizer',
     title: 'Customization',
     description: 'References your knowledge graph, prioritizes content on narrative design over engine architecture based on your preferences.',
@@ -72,7 +72,7 @@ const steps: Step[] = [
     color: 'bg-pink-600'
   },
   {
-    time: '10:00 AM',
+    time: '09:10 AM',
     agent: 'Delivery',
     title: 'Final Output',
     description: 'Creates a 5-page briefing with key insights, summaries, and implementation guides, synchronized to your Notion and calendar.',

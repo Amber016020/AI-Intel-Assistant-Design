@@ -19,34 +19,36 @@ export const agents: AgentData[] = [
   {
     id: 'orchestrator',
     title: 'Orchestrator Agent',
-    subtitle: 'The Strategic Command Center',
+    subtitle: 'Workflow Strategist & Dispatcher',
     description: 
-      'The Orchestrator is the central coordinator of the system. It interprets user requests, breaks them down into structured workflows, and delegates tasks to the appropriate specialized agents.',
+      'The Orchestrator Agent serves as the strategic dispatcher of the system. It interprets user queries, breaks them down into structured subtasks, and assigns each to the appropriate specialized agent.',
     capabilities: [
-      'Request analysis and intent classification',
-      'Task decomposition and workflow creation',
-      'Agent coordination and synchronization',
-      'SOP (Standard Operating Procedure) execution',
-      'Final output quality control'
+      'Understanding and classifying user intent',
+      'Decomposing complex queries into subtasks',
+      'Delegating tasks to appropriate agents'
     ],
     gradient: 'from-purple-600 to-purple-400',
     iconBg: 'bg-gradient-to-br from-purple-600 to-purple-400',
     icon: BrainIcon,
     inputExample: 'User query: "Research the latest trends in Multi-Agent systems for game development"',
-    outputExample: `Project_GameDev_MA\n- Task #1: Information Gathering (assigned to Collector Agents)\n- Task #2: Information Analysis (assigned to Analyst Agent)\n- Task #3: Personalization (assigned to Personalizer Agent)\n- Task #4: Final Report Generation`
-  },
-  {
+    outputExample: `Project_GameDev_MA
+  - Task #1: Information Gathering (assigned to News, Academic, GitHub Agents)
+  - Task #2: Synthesis and Insight Extraction (assigned to Analyst Agent)
+  - Task #3: User Relevance Personalization (assigned to Personalizer Agent)`
+  }
+  ,
+    {
     id: 'news',
     title: 'News Monitoring Agent',
     subtitle: 'Real-time Industry Intelligence',
     description: 
-      'The News Monitoring Agent continuously scans trusted news sources, industry blogs, and technology publications to gather the latest developments and announcements related to your research interests.',
+      'The News Monitoring Agent tracks and curates news content from reliable industry sources. It identifies relevant developments, summarizes key information, and surfaces emerging trends relevant to the research topic of the user.',
     capabilities: [
-      'Source credibility assessment',
-      'Topic relevance filtering',
-      'Content extraction and summarization',
-      'Trend identification across multiple sources',
-      'Breaking news alerts for critical developments'
+      'Scanning and filtering from trusted media and tech sites',
+      'Relevance detection based on user-defined topics',
+      'Article summarization and metadata extraction',
+      'Trend spotting across multiple articles',
+      'Timely alerts on significant breakthroughs'
     ],
     gradient: 'from-green-500 to-emerald-400',
     iconBg: 'bg-gradient-to-br from-green-500 to-emerald-400',
@@ -59,13 +61,13 @@ export const agents: AgentData[] = [
     title: 'Academic Research Agent',
     subtitle: 'Scholarly Knowledge Mining',
     description: 
-      'The Academic Research Agent searches through scientific papers, conference proceedings, and academic journals to extract technical information, methodologies, and cutting-edge research findings.',
+      'The Academic Research Agent searches academic databases and conferences to extract core findings, experimental methods, and insights from peer-reviewed papers relevant to your research focus.',
     capabilities: [
-      'Citation analysis and source validation',
-      'Technical concept extraction and explanation',
-      'Research methodology assessment',
-      'Cross-paper correlation and contradiction detection',
-      'Domain-specific terminology translation to plain language'
+      'Identifying relevant papers from scholarly sources',
+      'Extracting technical concepts and methodologies',
+      'Simplifying domain-specific jargon',
+      'Highlighting experimental results and comparative analyses',
+      'Connecting ideas across multiple publications'
     ],
     gradient: 'from-blue-500 to-cyan-400',
     iconBg: 'bg-gradient-to-br from-blue-500 to-cyan-400',
@@ -78,13 +80,13 @@ export const agents: AgentData[] = [
     title: 'GitHub Agent',
     subtitle: 'Open Source Implementation Scanner',
     description: 
-      'The GitHub Agent searches code repositories, documentation, and discussions to find practical implementations, tools, and libraries that match your research needs.',
+      'The GitHub Agent explores repositories to uncover real-world code implementations, libraries, and tools. It assesses code quality, extracts usage examples, and summarizes project documentation.',
     capabilities: [
-      'Repository quality assessment (stars, issues, activity)',
-      'Code pattern recognition and extraction',
-      'Documentation parsing and summarization',
-      'Implementation examples identification',
-      'Community sentiment analysis'
+      'Filtering by stars, forks, update frequency',
+      'Recognizing relevant code patterns and usage examples',
+      'Summarizing README files and setup instructions',
+      'Flagging commonly used libraries and frameworks',
+      'Analyzing issue discussions and community feedback'
     ],
     gradient: 'from-gray-600 to-gray-400',
     iconBg: 'bg-gradient-to-br from-gray-600 to-gray-400',
@@ -97,13 +99,13 @@ export const agents: AgentData[] = [
     title: 'Analyst Agent',
     subtitle: 'Pattern Recognition & Synthesis',
     description: 
-      'The Analyst Agent processes raw information from all collector agents, identifying patterns, correlations, and key insights across diverse data sources to create a cohesive analysis.',
+      'The Analyst Agent integrates information from all collector agents to identify recurring patterns, highlight contradictions, and derive strategic insights tailored to the project goal.',
     capabilities: [
-      'Cross-source information correlation',
-      'Contradiction and consensus identification',
-      'Gap analysis and research recommendations',
-      'Insight extraction and prioritization',
-      'Structured knowledge representation'
+      'Comparing and aligning findings across sources',
+      'Highlighting inconsistencies and convergences',
+      'Suggesting knowledge gaps and next research steps',
+      'Prioritizing insights based on impact and novelty',
+      'Organizing insights into structured formats'
     ],
     gradient: 'from-amber-500 to-orange-400',
     iconBg: 'bg-gradient-to-br from-amber-500 to-orange-400',
@@ -114,20 +116,20 @@ export const agents: AgentData[] = [
   {
     id: 'personalizer',
     title: 'Personalizer Agent',
-    subtitle: 'User-Adapted Intelligence',
+    subtitle: 'User-Centered Adaptation',
     description: 
-      'The Personalizer Agent customizes information based on your historical preferences, expertise level, and current context to deliver the most relevant and actionable intelligence.',
+      'The Personalizer Agent fine-tunes results by learning from the user’s past interactions, expertise, and evolving interests. It ensures that every output—whether a report, summary, or recommendation—is aligned with the user’s current context and preferences.',
     capabilities: [
-      'User knowledge graph maintenance',
-      'Implicit and explicit feedback processing',
-      'Content format and depth adaptation',
-      'Interest drift detection',
-      'Cross-topic connection identification'
+      'Tracking user history and preferred content types',
+      'Analyzing feedback signals like selections and dismissals',
+      'Adjusting tone, detail level, and technical depth',
+      'Highlighting information relevant to ongoing projects',
+      'Recommending content based on past interests and workflows'
     ],
     gradient: 'from-pink-600 to-red-400',
     iconBg: 'bg-gradient-to-br from-pink-600 to-red-400',
     icon: UserIcon,
-    inputExample: 'Analyst report, User profile (expertise: narrative design, past interests: AI dialogue systems, NPC behavior)',
-    outputExample: `PERSONALIZED BRIEF:\n[HIGHLIGHTED] Narrative Applications of Multi-Agent Systems\n- Dialogue generation framework prioritized (matches user expertise)\n- Character consistency mechanics explained in depth\n- Technical implementation details summarized but available in appendix\n- Connected to previous interest: "Dynamic Dialogue Trees" (from user history)`
+    inputExample: 'Input: Analyst report, User profile (background in game narrative design, interest in AI tools for NPC interaction)',
+    outputExample: `PERSONALIZED BRIEF:\n[RELEVANT] Multi-Agent Dialogue Systems for Narrative Games\n- Emphasis on dialogue consistency techniques (aligned with user role)\n- Skips generic LLM intro, goes directly into behavior modeling\n- Provides comparative table of dialogue engines used in recent indie titles\n- Mentions previously saved topic: "Branching Narrative Tools"`
   }
 ];

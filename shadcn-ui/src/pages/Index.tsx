@@ -4,6 +4,7 @@ import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import SystemArchitecture from '@/components/SystemArchitecture';
 import AgentRoster from '@/components/AgentRoster';
+import SystemSteps from '@/components/SystemSteps';
 import ScenarioSimulation from '@/components/ScenarioSimulation';
 import Footer from '@/components/Footer';
 import { initializeAnimations } from '@/lib/animations';
@@ -21,6 +22,7 @@ export default function Index() {
         <Hero />
         <SystemArchitecture />
         <AgentRoster />
+        <SystemSteps />
         <ScenarioSimulation />
       </main>
       <Footer />

@@ -73,7 +73,7 @@ const Header = () => {
           </button>
           <Button 
             variant="outline" 
-            className="border-purple-500 text-purple-400 hover:bg-purple-500 hover:text-black"
+            className="hidden border-purple-500 text-purple-400 hover:bg-purple-500 hover:text-black"
           >
             Learn More
           </Button>
