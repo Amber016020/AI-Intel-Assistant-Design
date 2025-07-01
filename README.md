@@ -5,10 +5,17 @@
 
 ## Overview
 
-We designed Metamorphosis, an interactive web-based dashboard that helps users collect, summarize, and understand the latest developments in AI technology. The system aggregates content from three key sources: news articles, GitHub repositories, and research papers, and generates concise summaries using AI. By simulating multi-agent collaboration, it automates the processes of information gathering, summarization, and insight generation.
+We designed Metamorphosis, an interactive web-based dashboard that helps users collect, summarize, and understand the latest developments in AI technology. The system aggregates content from three key sources—news articles, GitHub repositories, and research papers—and generates concise summaries using AI. By simulating multi-agent collaboration, it automates the processes of information gathering, summarization, and insight generation.
 
-Live demo:  
-[https://amber016020.github.io/AI-Intel-Assistant-Design/](https://amber016020.github.io/AI-Intel-Assistant-Design/)
+🔗 [Live Demo](https://amber016020.github.io/AI-Intel-Assistant-Design/)
+
+
+The website showcases the system architecture and interaction flow.
+Clicking the "Explore the System" button will lead you to a preview of the core dashboard interface.
+You may also access it directly here:
+[https://amber016020.github.io/AI-Intel-Assistant-Design/#/dashboard](https://amber016020.github.io/AI-Intel-Assistant-Design/#/dashboard)
+
+⚠️ Note: The interface is currently a front-end mockup and has not yet been connected to real APIs.
 
 ## Project Objective
 

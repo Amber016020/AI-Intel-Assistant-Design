@@ -2,17 +2,17 @@ import { useState } from 'react';
 
 const steps = [
   {
-    src: '/images/step1.jpg',
+    src: 'https://media.githubusercontent.com/media/Amber016020/AI-Intel-Assistant-Design/refs/heads/gh-pages/images/step1.jpg',
     alt: 'Step 1: Input Prompt',
     caption: 'Step 1: User enters a task prompt to start the agent system.',
   },
   {
-    src: './images/step2.jpg',
+    src: 'https://media.githubusercontent.com/media/Amber016020/AI-Intel-Assistant-Design/refs/heads/gh-pages/images/step2.jpg',
     alt: 'Step 2: Agents Collaborate',
     caption: 'Step 2: Multiple AI agents analyze and divide the task.',
   },
   {
-    src: '/AI-Intel-Assistant-Design/images/step3.jpg',
+    src: 'https://media.githubusercontent.com/media/Amber016020/AI-Intel-Assistant-Design/refs/heads/gh-pages/images/step3.jpg',
     alt: 'Step 3: Integrated Insight',
     caption: 'Step 3: Final result is presented as a summarized insight.',
   },

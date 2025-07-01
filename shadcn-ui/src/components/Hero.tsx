@@ -11,14 +11,14 @@ const agents = [
     img: 'https://public-frontend-1300249583.cos-website.ap-nanjing.myqcloud.com/assets/04-00493084.png',
   },
   {
-    name: 'Strategist',
-    role: 'Prioritization Agent',
-    img: 'https://public-frontend-1300249583.cos-website.ap-nanjing.myqcloud.com/assets/01-04bbe54b.png',
-  },
-  {
     name: 'Researcher',
     role: 'Data & Document Finder',
     img: 'https://public-frontend-1300249583.cos-website.ap-nanjing.myqcloud.com/assets/02-c8d04b22.png',
+  },
+  {
+    name: 'Analysis',
+    role: 'Information Synthesizer & Insight Generator',
+    img: 'https://public-frontend-1300249583.cos-website.ap-nanjing.myqcloud.com/assets/01-04bbe54b.png',
   },
   {
     name: 'Presenter',
@@ -88,7 +88,7 @@ const Hero = () => {
                 <span className="bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent text-purple-400">Metamorphosis</span>
               </h2>
               <p className="text-base md:text-lg text-purple-300 mt-2">
-                A personal intelligence system inspired by MetaGPT's multi-agent collaboration model. It analyzes tasks, prioritizes goals, retrieves documents, and generates reports — all with AI agents.
+                A personal intelligence assistant system inspired by MetaGPT's multi-agent collaboration model. It simulates a team of AI agents that collaborate to analyze user-defined tasks, collect relevant documents from multiple sources, synthesize insights, and automatically generate structured reports.
               </p>
             </div>
 

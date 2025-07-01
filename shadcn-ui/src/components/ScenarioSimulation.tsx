@@ -75,7 +75,7 @@ const steps: Step[] = [
     time: '09:10 AM',
     agent: 'Delivery',
     title: 'Final Output',
-    description: 'Creates a 5-page briefing with key insights, summaries, and implementation guides, synchronized to your Notion and calendar.',
+    description: 'Creates a comprehensive 5-page briefing that includes key insights, concise summaries of collected information, visualized data representations, and step-by-step implementation guides tailored to the user's context. ',
     icon: 'file-text',
     color: 'bg-blue-600'
   }
